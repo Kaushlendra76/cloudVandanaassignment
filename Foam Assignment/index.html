@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Survey Form</h1>
+        <form id="survey-form">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" required>
+            <br>
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" required>
+            <br>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" required>
+            <br>
+            <label for="country">Country:</label>
+            <select id="country" required>
+                <option value="usa">USA</option>
+                <option value="canada">India</option>
+                <option value="uk">UK</option>
+                <option value="canada">China</option>
+                <option value="canada">Russia</option>
+                <option value="canada">France</option>
+                <option value="canada">Dubai</option>
+                <option value="canada">UAE</option>
+            </select>
+            <br>
+            <label>Gender:</label>
+            <input type="checkbox" id="male"> <label for="male">Male</label>
+            <input type="checkbox" id="female"> <label for="female">Female</label>
+            <input type="checkbox" id="other"> <label for="other">Other</label>
+            <br>
+            <label for="profession">Profession:</label>
+            <input type="text" id="profession" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <br>
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" required>
+            <br>
+            <label for="first-name">Do you have any suggestion for improvement?</label>
+            <input type="text" id="Comment" class="input-comment" row="5" column="10">
+            <br>
+            <button type="submit">Submit</button>
+            <button type="button" id="reset-button">Reset</button>
+
+        </form>
+    </div>
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <span class="close" id="close-popup">&times;</span>
+            <h2>Survey Form Submission</h2>
+            <div id="popup-results"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
